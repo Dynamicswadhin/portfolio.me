@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+     /* Global Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #ffffff);
+    color: #222;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    color: #0077ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.7rem 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0077ff;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links a {
+    color: #222;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background: #0077ff;
+    color: #fff;
+}
+
+/* Header */
+.header-section {
+    background: linear-gradient(120deg, #0077ff33, #ff6f6133);
+    padding: 5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-text h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+.highlight {
+    color: #0077ff;
+    font-weight: 700;
+}
+
+.cv-btn {
+    display: inline-block;
+    background: #0077ff;
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cv-btn:hover {
+    background: #ff6f61;
+    transform: scale(1.05);
+}
+
+/* About */
+.about-section, 
+.skills-section,
+.certifications-section,
+.row-sections {
+    background: #fff;
+    color: #222;
+    padding: 4rem 2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    margin: 2rem auto;
+    border-radius: 20px;
+    max-width: 1100px;
+}
+
+.about-photo img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #0077ff;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Skills */
+.skills-list li {
+    background: #f5faff;
+    color: #0077ff;
+    padding: 0.8rem 1.6rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: #0077ff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Certifications */
+.cert-card {
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 1rem;
+    width: 220px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.cert-card:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: #f0f8ff;
+}
+
+/* Login & College */
+.login-section, .college-section {
+    background: #ffffffdd;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer-section {
+    background: #0077ff;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.1);
+}
+
+.footer-links a {
+    color: #fff;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6f61;
+}
+
+    </style>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">Portfolio</div>
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-section">
+        <div class="header-content" style="flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:2rem;">
+            <div class="header-photo" style="margin-bottom:1.5rem;">
+                <img src="branding.png" alt="Profile Photo" style="width:180px;height:180px;border-radius:50%;box-shadow:0 6px 20px rgba(0,0,0,0.15);border:4px solid #0077ff;object-fit:cover;">
+            </div>
+            <h1 style="font-size:2.8rem;font-weight:800;color:#0077ff;margin-bottom:0.5rem;">Your Name</h1>
+            <p style="font-size:1.3rem;color:#555;margin-bottom:1.2rem;">Web Developer & Designer</p>
+            <a href="#" class="cv-btn" download style="margin-bottom:1.2rem;">Download CV</a>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-content">
+            <div class="about-photo">
+                <img src="about.jpg" alt="About Photo">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I am a passionate web developer with experience in building modern, responsive websites and applications. I love working with new technologies and creating beautiful user experiences. My portfolio showcases my skills in design, development, and animation.
+                </p>
+                <p>
+                    I specialize in front-end development using HTML, CSS, and JavaScript, and have a keen interest in UI/UX design. I enjoy collaborating with others and continuously learning to stay updated with the latest trends in web development. My goal is to deliver high-quality, visually appealing, and user-friendly digital solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+        <section class="skills-section">
+            <div class="skills-content">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>HTML5 &amp; CSS3</li>
+                    <li>JavaScript &amp; ES6+</li>
+                    <li>React.js</li>
+                    <li>UI/UX Design</li>
+                    <li>Responsive Web Design</li>
+                    <li>Git &amp; Version Control</li>
+                    <li>Animation &amp; Interactivity</li>
+                </ul>
+            </div>
+        </section>
+        <section class="experience-section">
+            <div class="experience-content">
+                <h2>Experience Level</h2>
+                <div class="experience-bars">
+                    <div class="exp-bar">
+                        <span class="exp-title">Frontend Development</span>
+                        <div class="exp-track"><div class="exp-fill" style="width: 90%">Expert</div></div>
+                    </div>
+                    <div class="exp-bar">
+                        <span class="exp-title">Backend Development</span>
+                        <div class="exp-track"><div class="exp-fill" style="width: 75%">Intermediate</div></div>
+                    </div>
+                    <div class="exp-bar">
+                        <span class="exp-title">UI/UX Design</span>
+                        <div class="exp-track"><div class="exp-fill" style="width: 80%">Advanced</div></div>
+                    </div>
+                    <div class="exp-bar">
+                        <span class="exp-title">DevOps</span>
+                        <div class="exp-track"><div class="exp-fill" style="width: 60%">Intermediate</div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="certifications-section">
+            <div class="certifications-content">
+                <h2>Certifications</h2>
+                <div class="certifications-gallery">
+                    <div class="cert-card">
+                        <img src="cert1.jpg" alt="Certificate 1">
+                        <p>Certified Web Developer – FreeCodeCamp</p>
+                    </div>
+                    <div class="cert-card">
+                        <img src="cert2.jpg" alt="Certificate 2">
+                        <p>JavaScript Algorithms &amp; Data Structures – Coursera</p>
+                    </div>
+                    <div class="cert-card">
+                        <img src="cert3.jpg" alt="Certificate 3">
+                        <p>Responsive Web Design – Udemy</p>
+                    </div>
+                    <div class="cert-card">
+                        <img src="cert4.jpg" alt="Certificate 4">
+                        <p>UI/UX Design Fundamentals – LinkedIn Learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row-sections">
+            <section class="login-section">
+                <div class="login-content">
+                    <h2>Login</h2>
+                    <form class="login-form">
+                        <input type="text" placeholder="Username" required>
+                        <input type="password" placeholder="Password" required>
+                        <button type="submit">Login</button>
+                    </form>
+                </div>
+            </section>
+            <section class="college-section">
+                <div class="college-content">
+                    <h2>College</h2>
+                    <p>
+                        Bachelor of Technology in Computer Science<br>
+                        XYZ University, 2021 - 2025<br>
+                        Achievements: Dean's List, Coding Club President, Hackathon Winner
+                    </p>
+                </div>
+            </section>
+        </div>
+    <footer class="footer-section">
+        <div class="footer-content">
+            <p>&copy; 2025 Your Name. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">LinkedIn</a> |
+                <a href="#">GitHub</a> |
+                <a href="#">Email</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
